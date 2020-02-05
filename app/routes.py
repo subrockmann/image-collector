@@ -7,6 +7,11 @@ def index():
     user = {'username': 'Peter'}
     return render_template('index.html', title='Home', user=user)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 @app.route('/hello')
 def hello_world():
     return 'Hello World!'
