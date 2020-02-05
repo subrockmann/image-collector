@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Data collector</title>
+      {% else %}
+      <title>Welcome to Data collector</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Data collector: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
