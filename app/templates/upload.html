@@ -7,7 +7,11 @@
     
             <h1>Upload an image</h1>
             <hr>
-    
+            {% if filename %}
+            File has been uploaded: {{ filename }}
+            <hr>
+            {% endif %}
+
             <form action="/upload-image" method="POST" enctype="multipart/form-data">
     
             <div class="form-group">

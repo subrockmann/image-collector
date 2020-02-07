@@ -44,10 +44,10 @@ def upload_image():
             # TODO: replace this part with a function to upload to s3
             image.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 
-            return redirect(request.url)
+            #return redirect(request.url)
+            
 
-
-    return render_template("success_upload.html") 
+    return render_template("upload.html", filename=filename) 
 
 
 @app.route('/hello')
