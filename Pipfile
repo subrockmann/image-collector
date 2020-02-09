@@ -9,6 +9,8 @@ pylint = "*"
 [packages]
 flask = "*"
 flask-wtf = "*"
+boto3 = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.6"
